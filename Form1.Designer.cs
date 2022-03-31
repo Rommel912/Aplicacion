@@ -3,15 +3,10 @@ namespace Aplicacion
 {
     partial class Form1
     {
-        /// <summary>
-        /// Variable del diseñador necesaria.
-        /// </summary>
+      
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Limpiar los recursos que se estén usando.
-        /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,10 +18,7 @@ namespace Aplicacion
 
         #region Código generado por el Diseñador de Windows Forms
 
-        /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
-        /// </summary>
+        
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
@@ -70,9 +62,7 @@ namespace Aplicacion
             this.btnvendido.Text = "VENDIDO";
             this.btnvendido.UseVisualStyleBackColor = true;
             this.btnvendido.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // lblcaja
-            // 
+
             this.lblcaja.AutoSize = true;
             this.lblcaja.BackColor = System.Drawing.SystemColors.Control;
             this.lblcaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,7 +73,7 @@ namespace Aplicacion
             this.lblcaja.Text = "CAJA";
             this.lblcaja.Click += new System.EventHandler(this.lbl14_Click);
             // 
-            // dgvlista
+           
             // 
             this.dgvlista.AllowUserToAddRows = false;
             this.dgvlista.AllowUserToDeleteRows = false;
