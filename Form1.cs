@@ -20,7 +20,7 @@ namespace Aplicacion
         {
             InitializeComponent();
         }
-        SqlConnection conexion = new SqlConnection("Data Source=HECTOR-ALFARO\\SQLEXPRESS";;Initial Catalog=Tiendaropa;Integrated Security=true");
+        SqlConnection conexion = new SqlConnection("Data Source=HECTOR-ALFARO\\SQLEXPRESS";;Initial Catalog=Tiendaropa;Integrated Security=true")
 
 
         private void Form2_Load(object sender, EventArgs e)
