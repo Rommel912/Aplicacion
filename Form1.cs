@@ -15,7 +15,23 @@ namespace Aplicacion
         public Form1()
         {
             InitializeComponent();
+        } 
+        public Form2()
+        {
+            InitializeComponent();
         }
+        SqlConnection conexion = new SqlConnection("Data Source=HECTOR-ALFARO\\SQLEXPRESS";;Initial Catalog=Tiendaropa;Integrated Security=true");
+
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            String Select = "Select * from Cliente";
+            SqlDataAdapter adapter = new SqlDataAdapter(Select, conexion);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
+
 
         private void label6_Click(object sender, EventArgs e)
         {
