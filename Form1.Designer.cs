@@ -39,7 +39,7 @@ namespace Aplicacion
             this.lblefectivo = new System.Windows.Forms.Label();
             this.lbldevolucion = new System.Windows.Forms.Label();
             this.btneliminar = new System.Windows.Forms.Button();
-            this.btnagg = new System.Windows.Forms.Button();
+            this.btnagregar = new System.Windows.Forms.Button();
             this.txtcantidad = new System.Windows.Forms.TextBox();
             this.txtefectivo = new System.Windows.Forms.TextBox();
             this.cmbprenda = new System.Windows.Forms.ComboBox();
@@ -62,7 +62,9 @@ namespace Aplicacion
             this.btnvendido.Text = "VENDIDO";
             this.btnvendido.UseVisualStyleBackColor = true;
             this.btnvendido.Click += new System.EventHandler(this.button3_Click);
-
+            // 
+            // lblcaja
+            // 
             this.lblcaja.AutoSize = true;
             this.lblcaja.BackColor = System.Drawing.SystemColors.Control;
             this.lblcaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -73,7 +75,7 @@ namespace Aplicacion
             this.lblcaja.Text = "CAJA";
             this.lblcaja.Click += new System.EventHandler(this.lbl14_Click);
             // 
-           
+            // dgvlista
             // 
             this.dgvlista.AllowUserToAddRows = false;
             this.dgvlista.AllowUserToDeleteRows = false;
@@ -204,15 +206,15 @@ namespace Aplicacion
             this.btneliminar.UseVisualStyleBackColor = true;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
-            // btnagg
+            // btnagregar
             // 
-            this.btnagg.Location = new System.Drawing.Point(141, 393);
-            this.btnagg.Name = "btnagg";
-            this.btnagg.Size = new System.Drawing.Size(157, 53);
-            this.btnagg.TabIndex = 15;
-            this.btnagg.Text = "AGREGAR";
-            this.btnagg.UseVisualStyleBackColor = true;
-            this.btnagg.Click += new System.EventHandler(this.btnagg_Click);
+            this.btnagregar.Location = new System.Drawing.Point(141, 393);
+            this.btnagregar.Name = "btnagregar";
+            this.btnagregar.Size = new System.Drawing.Size(157, 53);
+            this.btnagregar.TabIndex = 15;
+            this.btnagregar.Text = "AGREGAR";
+            this.btnagregar.UseVisualStyleBackColor = true;
+            this.btnagregar.Click += new System.EventHandler(this.btnagregar_Click);
             // 
             // txtcantidad
             // 
@@ -315,7 +317,7 @@ namespace Aplicacion
             this.Controls.Add(this.txtcantidad);
             this.Controls.Add(this.btnvendido);
             this.Controls.Add(this.btneliminar);
-            this.Controls.Add(this.btnagg);
+            this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.lblcaja);
             this.Controls.Add(this.lblprenda);
             this.Controls.Add(this.lblcodigo);
@@ -355,7 +357,7 @@ namespace Aplicacion
         private System.Windows.Forms.Label lblefectivo;
         private System.Windows.Forms.Label lbldevolucion;
         private System.Windows.Forms.Button btneliminar;
-        private System.Windows.Forms.Button btnagg;
+        private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.TextBox txtcantidad;
         private System.Windows.Forms.TextBox txtefectivo;
         private System.Windows.Forms.ComboBox cmbprenda;

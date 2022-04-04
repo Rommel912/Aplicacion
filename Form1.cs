@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,21 +15,6 @@ namespace Aplicacion
         {
             InitializeComponent();
         } 
-        public Form2()
-        {
-            InitializeComponent();
-        }
-        SqlConnection conexion = new SqlConnection("Data Source=HECTOR-ALFARO\\SQLEXPRESS";;Initial Catalog=Tiendaropa;Integrated Security=true");
-
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            String Select = "Select * from Cliente";
-            SqlDataAdapter adapter = new SqlDataAdapter(Select, conexion);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            dataGridView1.DataSource = dt;
-        }
 
 
         private void label6_Click(object sender, EventArgs e)
@@ -75,22 +59,11 @@ namespace Aplicacion
             }
         }
 
-        private void btnagg_Click(object sender, EventArgs e)
-        {
-            DataGridViewRow file = new DataGridViewRow();
-            file.CreateCells(dgvlista);
+        private void btnagregar_Click(object sender, EventArgs e)
+        {   
+            
 
-            file.Cells[0].Value = lblcodigo.Text;
-            file.Cells[1].Value = lblnombre.Text;
-            file.Cells[2].Value = lblprecio.Text;
-            file.Cells[3].Value = txtcantidad.Text;
-            file.Cells[4].Value = (float.Parse(lblprecio.Text)*float.Parse(txtcantidad.Text)).ToString();
-
-            dgvlista.Rows.Add(file);
-
-            lblcodigo.Text = lblnombre.Text = lblprecio.Text = txtcantidad.Text = "";
-
-            obtenerTotal();
+            
                                       
         }
 
